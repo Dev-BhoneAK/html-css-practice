@@ -1,0 +1,19 @@
+@import "./common-func";
+.product-left {
+  display: flex;
+  flex-direction: column;
+  .top-image {
+    img {
+      width: 300px;
+    }
+  }
+  .slide-image {
+    img {
+      width: 80px;
+    }
+  }
+}
+
+.slide-image {
+  @include displayFlex(20px);
+}

@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./common-func";
+.top-header {
+  font-size: 14px;
+  background-color: $secondaryColor;
+  color: $pTextColor;
+  .container {
+    @include container(14px, 28px);
+  }
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 25px;
+}

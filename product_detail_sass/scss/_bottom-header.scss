@@ -1,0 +1,19 @@
+@import "./common-func";
+
+.container {
+  @include container(1rem, 2rem);
+}
+
+.menu-left {
+  @include displayFlex(30px);
+}
+
+.menu-right {
+  @include displayFlex(20px);
+  .main-menu {
+    @include displayFlex(20px);
+  }
+  .icon-nav {
+    @include displayFlex(20px);
+  }
+}

@@ -1,0 +1,13 @@
+@import "./common-func";
+.product-middle {
+  max-width: 400px;
+}
+
+.product-count {
+  @include displayFlex(10px);
+}
+
+.social-icons {
+  max-width: 100px;
+  @include displayFlex(10px);
+}

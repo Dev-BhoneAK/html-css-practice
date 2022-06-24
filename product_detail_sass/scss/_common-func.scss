@@ -1,0 +1,15 @@
+@mixin container($width, $height) {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $width $height;
+}
+
+@mixin displayFlex($columnGap) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: $columnGap;
+}

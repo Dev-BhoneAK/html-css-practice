@@ -1,0 +1,11 @@
+@import "./common-func";
+@import "./variables";
+
+.breadcrumb-section {
+  background-color: $secondaryColor;
+  color: $pTextColor;
+
+  .breadcrumb {
+    @include displayFlex(20px);
+  }
+}
