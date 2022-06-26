@@ -6,12 +6,10 @@
   color: $pTextColor;
   .container {
     @include container(14px, 28px);
+    @include displayFlex(0);
   }
 }
 
 .header-contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 25px;
+  @include displayFlex(25px);
 }
