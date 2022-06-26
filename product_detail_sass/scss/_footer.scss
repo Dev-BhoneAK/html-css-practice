@@ -1,0 +1,11 @@
+@import "./common-func";
+@import "./variables";
+
+.footer {
+  background-color: $secondaryColor;
+  .container {
+    p {
+      margin: 0 auto;
+    }
+  }
+}

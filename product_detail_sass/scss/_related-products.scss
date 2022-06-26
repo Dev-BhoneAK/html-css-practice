@@ -1,0 +1,14 @@
+@import "./common-func";
+.related-products {
+  @include container(1rem, 2rem);
+  img {
+    width: 160px;
+  }
+  .product-row {
+    @include displayFlex(20px);
+    .product-box {
+      text-align: center;
+      justify-content: s;
+    }
+  }
+}
