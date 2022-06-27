@@ -1,13 +1,46 @@
 @import "./common-func";
+@import "./variables";
+
 .product-middle {
-  max-width: 400px;
+  max-width: 500px;
+  .product-count {
+    background-color: $secondaryColor;
+    font-size: $secondaryFontSize;
+    color: $pTextColor;
+    @include displayFlex();
+  }
+
+  .padding {
+    @include padding(10px, 20px);
+  }
+  .rating-section {
+    @include displayFlex($justifyContent: flex-start);
+    .rating {
+      margin-left: 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  .social-icons {
+    max-width: 200px;
+    @include displayFlex();
+    .fa-brands {
+      font-size: 1.5rem;
+    }
+  }
+
+  .detail-section {
+    td {
+      font-size: $secondaryFontSize;
+      color: $pTextColor;
+    }
+  }
 }
 
-.product-count {
-  @include displayFlex(10px);
+.product-middle > * {
+  margin: 15px 0;
 }
 
-.social-icons {
-  max-width: 100px;
-  @include displayFlex(10px);
+.product-middle > *:first-child {
+  margin-top: 0;
 }

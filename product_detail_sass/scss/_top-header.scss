@@ -1,15 +1,17 @@
 @import "./variables";
 @import "./common-func";
 .top-header {
-  font-size: 14px;
+  font-size: $secondaryFontSize;
   background-color: $secondaryColor;
   color: $pTextColor;
-  .container {
-    @include container(14px, 28px);
-    @include displayFlex(0);
+  .display-flex {
+    @include displayFlex();
+  }
+  .padding {
+    @include padding(15px, 0px);
   }
 }
 
 .header-contact {
-  @include displayFlex(25px);
+  @include displayFlex($columnGap: 20px);
 }

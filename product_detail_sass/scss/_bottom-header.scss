@@ -1,20 +1,24 @@
 @import "./common-func";
 
-.container {
-  @include container(1rem, 2rem);
-  @include displayFlex(0);
-}
-
-.menu-left {
-  @include displayFlex(30px);
-}
-
-.menu-right {
-  @include displayFlex(20px);
-  .main-menu {
-    @include displayFlex(20px);
+.bottom-header {
+  .display-flex {
+    @include displayFlex();
   }
-  .icon-nav {
-    @include displayFlex(20px);
+  .padding {
+    @include padding(30px, 0px);
+  }
+  .menu-left {
+    @include displayFlex($columnGap: 20px);
+  }
+
+  .menu-right {
+    @include displayFlex($columnGap: 20px);
+
+    .main-menu {
+      @include displayFlex($columnGap: 20px);
+    }
+    .icon-nav {
+      @include displayFlex($columnGap: 20px);
+    }
   }
 }
