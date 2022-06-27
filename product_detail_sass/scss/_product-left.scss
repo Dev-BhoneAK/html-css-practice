@@ -15,5 +15,5 @@
 }
 
 .slide-image {
-  @include displayFlex(20px);
+  @include displayFlex();
 }

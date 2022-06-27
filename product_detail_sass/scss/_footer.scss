@@ -2,10 +2,15 @@
 @import "./variables";
 
 .footer {
+  font-size: $secondaryFontSize;
   background-color: $secondaryColor;
-  .container {
-    p {
-      margin: 0 auto;
-    }
+  color: $pTextColor;
+
+  .padding {
+    @include padding(15px, 0px);
+  }
+
+  .container > p {
+    text-align: center;
   }
 }
