@@ -2,7 +2,7 @@
 @import "./variables";
 
 .product-middle {
-  max-width: 500px;
+  text-align: center;
   .product-count {
     background-color: $secondaryColor;
     font-size: $secondaryFontSize;
@@ -14,7 +14,8 @@
     @include padding(10px, 20px);
   }
   .rating-section {
-    @include displayFlex($justifyContent: flex-start);
+    @include displayFlex($justifyContent: center);
+    // @include displayFlex($justifyContent: flex-start);
     .rating {
       margin-left: 1rem;
       font-size: 1rem;
@@ -22,6 +23,7 @@
   }
 
   .social-icons {
+    margin: 0 auto;
     max-width: 200px;
     @include displayFlex();
     .fa-brands {

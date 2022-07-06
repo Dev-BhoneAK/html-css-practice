@@ -86,6 +86,13 @@
   .left-icon {
     border-right: 0;
   }
+  .product-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
 }
 
 .product-right > * {

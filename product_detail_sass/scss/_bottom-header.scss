@@ -14,6 +14,9 @@
   .menu-right {
     @include displayFlex($columnGap: 20px);
 
+    .right-navbar {
+      display: none;
+    }
     .main-menu {
       @include displayFlex($columnGap: 20px);
     }
